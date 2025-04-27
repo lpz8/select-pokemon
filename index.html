@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>Pokemon API</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch con la API de Pokémon</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Información de Pokémon</h1>
-    <div class="pokemon-form">
-      <select id="pokemon-select">
+    <h1>Selecciona un Pokémon</h1>
+    <select id="pokemon-select">
         <option value="bulbasaur">Bulbasaur</option>
         <option value="charmander">Charmander</option>
         <option value="squirtle">Squirtle</option>
-      </select>
-      <button id="get-pokemon">Obtener Información</button>
+    </select>
+    <button onclick="obtenerInformacion()">Obtener Información</button>
+
+    <div id="pokemon-info">
+        
     </div>
-    
-  </div>
-  <script src="./js/script.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
